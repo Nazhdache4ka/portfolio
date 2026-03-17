@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export const MediaType = {
   IMG: 'img',
   VIDEO: 'video',
@@ -21,8 +23,9 @@ export interface IProject {
 export interface ICard {
   title: string;
   content: string;
-  rowDirection: RowDirection;
-  image: string;
+  rowDirection?: RowDirection;
+  image?: string;
+  icon?: ReactNode;
   stack?: string[];
 }
 

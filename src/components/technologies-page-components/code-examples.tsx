@@ -100,7 +100,8 @@ return (
             variant="body2"
             sx={{ mb: 1 }}
           >
-            Projects, cards and media are strongly typed to make the UI data-driven and safer to refactor.
+            Example of how TypeScript structures are used in the project. <code>{`const obj = { ... } as const`}</code>{' '}
+            construction for creating enum-like structure, interfaces for strongly typed data in arrays and objects.
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Box
@@ -116,9 +117,16 @@ return (
                 overflowX: 'auto',
               }}
             >
-              <code>{`export interface IMedia {
+              <code>{`export const MediaType = {
+  IMG: 'img',
+  VIDEO: 'video',
+} as const;
+
+export type MediaType = (typeof MediaType)[keyof typeof MediaType];
+
+export interface IMedia {
   url: string;
-  type: 'img' | 'video';
+  type: MediaType;
 }
 
 export interface IProject {

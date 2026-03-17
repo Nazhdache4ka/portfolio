@@ -1,1 +1,1 @@
-export * from './custom-cards';
+export * from './about-cards';
