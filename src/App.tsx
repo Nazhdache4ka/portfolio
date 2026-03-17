@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Projects, Home, About, Technologies } from './pages';
+import { Projects, Home, About, Technologies, Error } from './pages';
 import { Layout } from './components';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         />
         <Route
           path="*"
-          element={<Home />}
+          element={<Error />}
         />
       </Route>
     </Routes>
