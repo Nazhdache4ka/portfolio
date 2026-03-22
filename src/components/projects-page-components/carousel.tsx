@@ -17,6 +17,15 @@ import { BottomIndicator } from './bottom-indicator';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { MediaType, type IProject } from '../../interfaces';
 import styles from './styles/carousel.module.css';
+import project1 from '../../../assets/photos/project1.jpg';
+import chessWebMov from '../../../assets/videos/chess-web.mov';
+import chessNativeMp4 from '../../../assets/videos/chess-native.mp4';
+import chessNative2Mp4 from '../../../assets/videos/chess-native2.mp4';
+import fullstack4Mov from '../../../assets/videos/fullstack4.mov';
+import fullstack1Mov from '../../../assets/videos/fullstack1.mov';
+import fullstack2Mov from '../../../assets/videos/fullstack2.mov';
+import fullstack3Mov from '../../../assets/videos/fullstack3.mov';
+import fullstackBdPng from '../../../assets/photos/fullstack-bd.png';
 
 export function Carousel() {
   const [index, setIndex] = useState<number>(0);
@@ -206,11 +215,11 @@ const projects: IProject[] = [
   {
     media: [
       {
-        url: '../../../assets/photos/project1.jpg',
+        url: project1,
         type: MediaType.IMG,
       },
       {
-        url: '../../../assets/videos/chess-web.mov',
+        url: chessWebMov,
         type: MediaType.VIDEO,
       },
     ],
@@ -223,11 +232,11 @@ const projects: IProject[] = [
   {
     media: [
       {
-        url: '../../../assets/videos/chess-native.mp4',
+        url: chessNativeMp4,
         type: MediaType.VIDEO,
       },
       {
-        url: '../../../assets/videos/chess-native2.mp4',
+        url: chessNative2Mp4,
         type: MediaType.VIDEO,
       },
     ],
@@ -249,23 +258,23 @@ const projects: IProject[] = [
   {
     media: [
       {
-        url: '../../../assets/videos/fullstack4.mov',
+        url: fullstack4Mov,
         type: MediaType.VIDEO,
       },
       {
-        url: '../../../assets/videos/fullstack1.mov',
+        url: fullstack1Mov,
         type: MediaType.VIDEO,
       },
       {
-        url: '../../../assets/videos/fullstack2.mov',
+        url: fullstack2Mov,
         type: MediaType.VIDEO,
       },
       {
-        url: '../../../assets/videos/fullstack3.mov',
+        url: fullstack3Mov,
         type: MediaType.VIDEO,
       },
       {
-        url: '../../../assets/photos/fullstack-bd.png',
+        url: fullstackBdPng,
         type: MediaType.IMG,
       },
     ],

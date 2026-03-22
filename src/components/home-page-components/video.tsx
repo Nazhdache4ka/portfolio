@@ -1,5 +1,6 @@
 import { Container, Typography, Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import homePageVideo from '../../../assets/videos/home-page.mp4';
 
 export function Video() {
   return (
@@ -21,7 +22,7 @@ export function Video() {
         }}
       >
         <video
-          src={'../../assets/videos/home-page.mp4'}
+          src={homePageVideo}
           autoPlay
           loop
           muted

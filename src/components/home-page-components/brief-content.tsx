@@ -13,6 +13,7 @@ import {
   Stack,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
+import aboutMeCardImg from '../../../assets/photos/about-me-card-img.jpg';
 
 export function BriefContent() {
   const [value, setValue] = useState(0);
@@ -72,7 +73,7 @@ function AboutMe({ value, index }: TabItemProps) {
     <Card sx={{ mt: 3, display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
       <CardMedia
         component="img"
-        image={'../../assets/photos/about-me-card-img.jpg'}
+        image={aboutMeCardImg}
         alt="About me"
         sx={{
           width: { xs: '100%', md: '35%' },

@@ -1,5 +1,9 @@
 import { Container, Stack, Typography, Button, Card, CardActions, CardMedia, CardContent } from '@mui/material';
 import { Link } from 'react-router-dom';
+import homePreview from '../../assets/photos/home.jpg';
+import projectPreview from '../../assets/photos/project.jpg';
+import aboutPreview from '../../assets/photos/about.jpg';
+import stackPreview from '../../assets/photos/stack.jpg';
 
 export function Error() {
   return (
@@ -32,7 +36,7 @@ export function Error() {
           <Card>
             <CardMedia
               component="img"
-              image="../../assets/photos/home.jpg"
+              image={homePreview}
               alt="Home page preview"
               sx={{ width: '100%', maxHeight: 280, objectFit: 'cover' }}
             />
@@ -54,7 +58,7 @@ export function Error() {
           <Card>
             <CardMedia
               component="img"
-              image="../../assets/photos/project.jpg"
+              image={projectPreview}
               alt="Projects page preview"
               sx={{ width: '100%', maxHeight: 280, objectFit: 'cover' }}
             />
@@ -82,7 +86,7 @@ export function Error() {
           <Card>
             <CardMedia
               component="img"
-              image="../../assets/photos/about.jpg"
+              image={aboutPreview}
               alt="About page preview"
               sx={{ width: '100%', maxHeight: 280, objectFit: 'cover' }}
             />
@@ -104,7 +108,7 @@ export function Error() {
           <Card>
             <CardMedia
               component="img"
-              image="../../assets/photos/stack.jpg"
+              image={stackPreview}
               alt="Technologies page preview"
               sx={{ width: '100%', maxHeight: 280, objectFit: 'cover' }}
             />
