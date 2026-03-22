@@ -5,15 +5,18 @@ import { CssBaseline } from '@mui/material';
 import './index.css';
 import App from './App.tsx';
 
-const root = createRoot(document.getElementById('root')!);
-
-if (!root) {
+const rootElement = document.getElementById('root');
+if (!rootElement) {
   throw new Error('Root element not found');
 }
 
+const root = createRoot(rootElement);
+const routerBasename =
+  import.meta.env.BASE_URL.replace(/\/$/, '') || undefined;
+
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <CssBaseline />
       <App />
     </BrowserRouter>
